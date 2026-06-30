@@ -1,199 +1,1105 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abid Hussain | Oracle DBA Portfolio</title>
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #0f172a;
-            color: white;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        /* ===== NAVBAR ===== */
-        .navbar {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: #111827;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            z-index: 1000;
-        }
+<title>Abid Hussain | Oracle Certified Professional (OCP) | Senior Oracle DBA</title>
 
-        .logo {
-            font-size: 20px;
-            font-weight: bold;
-            color: #f97316;
-        }
+<meta name="description"
+content="Oracle Certified Professional (OCP) with 12+ years of experience in Oracle Database Administration, Oracle RAC, Data Guard, RMAN, Performance Tuning, Linux and Shell Scripting.">
 
-        .nav-links {
-            display: flex;
-            gap: 20px;
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        .nav-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 14px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .nav-links a:hover {
-            color: #38bdf8;
-        }
+<style>
 
-        /* ===== HEADER ===== */
-        header {
-            text-align: center;
-            padding: 120px 20px 60px;
-            background: #111827;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
 
-        h1 {
-            margin: 0;
-            font-size: 42px;
-            color: #f97316;
-        }
+body{
 
-        h2 {
-            color: #38bdf8;
-        }
+font-family:'Poppins',sans-serif;
+background:#081221;
+color:#f5f5f5;
+line-height:1.7;
 
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 60px 20px;
-        }
+}
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-        }
+a{
 
-        ul {
-            line-height: 1.8;
-        }
+text-decoration:none;
+color:white;
 
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            margin-top: 15px;
-            background: #f97316;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-        }
+}
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #111827;
-        }
+.container{
 
-        /* smooth scroll */
-        html {
-            scroll-behavior: smooth;
-        }
+width:90%;
+max-width:1200px;
+margin:auto;
 
-        /* mobile */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-        }
-    </style>
+}
+
+/*******************
+Navigation
+********************/
+
+nav{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+height:75px;
+box-shadow:0 4px 12px rgba(0,0,0,.35);
+z-index:1000;
+
+}
+
+.logo{
+
+position:absolute;
+left:40px;
+font-size:24px;
+font-weight:700;
+color:#f97316;
+
+}
+
+.menu{
+
+display:flex;
+list-style:none;
+gap:35px;
+
+}
+
+.menu a{
+
+font-size:15px;
+font-weight:500;
+transition:.3s;
+
+}
+
+.menu a:hover{
+
+color:#38bdf8;
+
+}
+
+/*******************
+Hero
+********************/
+
+.hero{
+
+height:100vh;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+background:
+linear-gradient(rgba(8,18,33,.92),
+rgba(8,18,33,.92)),
+url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero h1{
+
+font-size:58px;
+margin-bottom:15px;
+color:#ffffff;
+
+}
+
+.hero h2{
+
+font-size:26px;
+font-weight:400;
+color:#38bdf8;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:19px;
+max-width:800px;
+margin:auto;
+color:#d1d5db;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:14px 35px;
+
+margin-top:35px;
+
+background:#f97316;
+
+border-radius:8px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.btn:hover{
+
+background:#ea580c;
+transform:translateY(-2px);
+
+}
+
+/*******************
+Sections
+********************/
+
+section{
+
+padding:90px 0;
+
+}
+
+.section-title{
+
+text-align:center;
+
+font-size:36px;
+
+margin-bottom:50px;
+
+color:#38bdf8;
+
+}
+
+.card{
+
+background:#162033;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 0 25px rgba(0,0,0,.25);
+
+margin-bottom:30px;
+
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-5px);
+
+}
+
+.grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+gap:25px;
+
+}
+
+/*******************
+Footer
+********************/
+
+footer{
+
+background:#0f172a;
+
+text-align:center;
+
+padding:30px;
+
+font-size:15px;
+
+}
+
+/*******************
+Responsive
+********************/
+
+@media(max-width:768px){
+
+.logo{
+
+position:static;
+
+margin-bottom:10px;
+
+}
+
+nav{
+
+flex-direction:column;
+height:auto;
+padding:15px;
+
+}
+
+.menu{
+
+flex-wrap:wrap;
+justify-content:center;
+gap:18px;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero h2{
+
+font-size:20px;
+
+}
+
+}
+
+</style>
+
 </head>
 
 <body>
 
-<!-- NAVBAR -->
-<div class="navbar">
-    <div class="logo">Abid Hussain</div>
-    <div class="nav-links">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact</a>
+<!-- ===========================
+     Navigation
+=========================== -->
+
+<nav>
+
+    <div class="logo">
+        Abid Hussain
     </div>
-</div>
 
-<!-- HEADER -->
-<header id="home">
-    <h1>Abid Hussain</h1>
-    <h2>Oracle Certified Professional (OCP)</h2>
-    <p>Senior Oracle DBA | 12+ Years Experience</p>
+    <ul class="menu">
 
-    <a class="btn" href="#contact">Hire Me</a>
-</header>
+        <li><a href="#home">Home</a></li>
 
-<!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <div class="card">
+        <li><a href="#about">About</a></li>
+
+        <li><a href="#experience">Experience</a></li>
+
+        <li><a href="#skills">Skills</a></li>
+
+        <li><a href="#services">Services</a></li>
+
+        <li><a href="#projects">Projects</a></li>
+
+        <li><a href="#certifications">Certification</a></li>
+
+        <li><a href="#contact">Contact</a></li>
+
+    </ul>
+
+</nav>
+
+
+<!-- ===========================
+     Hero Section
+=========================== -->
+
+<section class="hero" id="home">
+
+    <div class="container">
+
+        <h1>Abid Hussain</h1>
+
+        <h2>
+            Oracle Certified Professional (OCP)
+        </h2>
+
         <p>
-            I am Abid Hussain, an Oracle Certified Professional (OCP) with over 12 years
-            of experience in Oracle Database Administration. I specialize in enterprise
-            database management, performance tuning, high availability solutions, and automation
-            using shell scripting.
+
+            Senior Oracle Database Administrator with over <strong>12+ years of enterprise experience</strong>
+            delivering highly available, secure and high-performance Oracle database solutions.
+            Specialized in Oracle RAC, Data Guard, RMAN Backup & Recovery, Performance Tuning,
+            Linux Administration and Shell Scripting Automation.
+
         </p>
+
+        <br>
+
+        <a href="#contact" class="btn">
+            Hire Me
+        </a>
+
+        &nbsp;&nbsp;
+
+        <a href="assets/Abid_Hussain_Resume.pdf"
+           class="btn"
+           target="_blank">
+
+            Download Resume
+
+        </a>
+
+        <br><br><br>
+
+        <div style="font-size:17px;">
+
+            📧
+            <a href="mailto:abidgul85@gmail.com">
+                abidgul85@gmail.com
+            </a>
+
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+            💼
+            <a href="https://www.linkedin.com/in/abid-hussain-9468a366/"
+               target="_blank">
+
+                LinkedIn
+
+            </a>
+
+            &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+
+            🖥️
+
+            Oracle DBA Consultant
+
+        </div>
+
     </div>
+
 </section>
 
-<!-- SKILLS -->
+<!-- ===========================
+     ABOUT SECTION
+=========================== -->
+
+<section id="about">
+
+    <div class="container">
+
+        <h2 class="section-title">About Me</h2>
+
+        <div class="card">
+
+            <h3 style="color:#f97316; margin-bottom:20px;">
+                Senior Oracle Database Administrator
+            </h3>
+
+            <p>
+
+                I am <strong>Abid Hussain</strong>, an
+                <strong>Oracle Certified Professional (OCP)</strong>
+                with more than <strong>12 years of hands-on experience</strong>
+                in Oracle Database Administration across enterprise production
+                environments.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                Throughout my career, I have successfully managed mission-critical
+                Oracle databases by implementing high availability, disaster recovery,
+                performance tuning, backup and recovery strategies, security hardening,
+                database migrations, upgrades, and automation using Shell Scripting.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                My expertise includes Oracle RAC, Oracle Data Guard,
+                RMAN Backup & Recovery, ASM, Linux Administration,
+                SQL Performance Tuning, Capacity Planning,
+                Database Health Checks and proactive monitoring.
+
+            </p>
+
+            <br>
+
+            <p>
+
+                I enjoy helping organizations improve database reliability,
+                reduce downtime, automate repetitive administrative tasks,
+                and optimize database performance for business-critical systems.
+
+            </p>
+
+        </div>
+
+
+        <!-- =====================
+             Highlights
+        ====================== -->
+
+        <div class="grid">
+
+            <div class="card" style="text-align:center;">
+
+                <h1 style="color:#38bdf8;">12+</h1>
+
+                <h3>Years Experience</h3>
+
+                <p>
+                    Managing enterprise Oracle databases in production environments.
+                </p>
+
+            </div>
+
+            <div class="card" style="text-align:center;">
+
+                <h1 style="color:#38bdf8;">OCP</h1>
+
+                <h3>Oracle Certified</h3>
+
+                <p>
+                    Oracle Certified Professional in Database Administration.
+                </p>
+
+            </div>
+
+            <div class="card" style="text-align:center;">
+
+                <h1 style="color:#38bdf8;">24×7</h1>
+
+                <h3>Production Support</h3>
+
+                <p>
+                    Extensive experience supporting mission-critical production systems.
+                </p>
+
+            </div>
+
+            <div class="card" style="text-align:center;">
+
+                <h1 style="color:#38bdf8;">100+</h1>
+
+                <h3>Successful Activities</h3>
+
+                <p>
+                    Database migrations, upgrades, tuning, backup & recovery,
+                    automation and troubleshooting.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ===========================
+     EXPERIENCE
+=========================== -->
+
+<section id="experience">
+
+    <div class="container">
+
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="card">
+
+            <h3 style="color:#f97316;">
+                Senior Oracle Database Administrator
+            </h3>
+
+            <h4 style="color:#38bdf8; margin-top:8px;">
+                12+ Years of Enterprise Database Administration
+            </h4>
+
+            <p style="margin-top:20px;">
+
+                Over the past 12+ years, I have worked with enterprise production
+                environments supporting mission-critical Oracle databases across
+                banking, telecom, healthcare, government, and large corporate
+                infrastructures.
+
+            </p>
+
+            <br>
+
+            <h3 style="color:#38bdf8;">Core Responsibilities</h3>
+
+            <ul style="margin-top:15px; line-height:2;">
+
+                <li>✔ Oracle Database Installation, Configuration and Administration</li>
+
+                <li>✔ Oracle Database 11g, 12c, 19c and 21c Administration</li>
+
+                <li>✔ Oracle RAC Installation, Configuration and Administration</li>
+
+                <li>✔ Oracle Data Guard Setup and Disaster Recovery Planning</li>
+
+                <li>✔ RMAN Backup, Restore and Disaster Recovery Testing</li>
+
+                <li>✔ Oracle ASM Administration</li>
+
+                <li>✔ Performance Monitoring and SQL Performance Tuning</li>
+
+                <li>✔ Database Health Checks and Preventive Maintenance</li>
+
+                <li>✔ Database Migration, Upgrade and Patch Management</li>
+
+                <li>✔ Capacity Planning and Storage Management</li>
+
+                <li>✔ Linux Server Administration for Oracle Databases</li>
+
+                <li>✔ Shell Scripting Automation for Daily DBA Activities</li>
+
+                <li>✔ Production Incident Management and Root Cause Analysis</li>
+
+                <li>✔ Database Security, User Management and Auditing</li>
+
+                <li>✔ 24×7 Production Support and Critical Issue Resolution</li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- =====================
+             Career Highlights
+        ====================== -->
+
+        <div class="grid">
+
+            <div class="card">
+
+                <h3 style="color:#f97316;">High Availability</h3>
+
+                <p>
+
+                    Designed and managed highly available Oracle RAC
+                    environments with failover capabilities and minimal
+                    downtime.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3 style="color:#f97316;">Disaster Recovery</h3>
+
+                <p>
+
+                    Implemented Oracle Data Guard solutions to ensure
+                    business continuity and disaster recovery readiness.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3 style="color:#f97316;">Performance Optimization</h3>
+
+                <p>
+
+                    Improved database performance by analyzing AWR,
+                    ASH, ADDM reports and optimizing SQL execution plans.
+
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3 style="color:#f97316;">Automation</h3>
+
+                <p>
+
+                    Developed Shell Scripts to automate database monitoring,
+                    RMAN backups, health checks, alert reporting and
+                    maintenance activities.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+     TECHNICAL SKILLS
+=========================== -->
+
 <section id="skills">
-    <h2>Skills</h2>
-    <div class="card">
-        <ul>
-            <li>Oracle Database (11g / 12c / 19c / 21c)</li>
-            <li>Oracle RAC</li>
-            <li>Data Guard</li>
-            <li>RMAN Backup & Recovery</li>
-            <li>Performance Tuning</li>
-            <li>ASM</li>
-            <li>Linux Administration</li>
-            <li>Shell Scripting Automation</li>
-        </ul>
-    </div>
-</section>
 
-<!-- SERVICES -->
+    <div class="container">
+
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle Database</h3>
+                <p>
+                    Oracle 11g, 12c, 19c and 21c Database Administration,
+                    installation, upgrades, patching and troubleshooting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle RAC</h3>
+                <p>
+                    Installation, configuration, administration,
+                    troubleshooting and high availability management.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle Data Guard</h3>
+                <p>
+                    Physical Standby, Switchover, Failover,
+                    Disaster Recovery planning and monitoring.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">RMAN Backup & Recovery</h3>
+                <p>
+                    RMAN backup strategy, recovery testing,
+                    duplication, restore and disaster recovery.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Performance Tuning</h3>
+                <p>
+                    SQL tuning, AWR, ASH, ADDM analysis,
+                    execution plans and database optimization.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle ASM</h3>
+                <p>
+                    Disk Groups, Storage Administration,
+                    ASM maintenance and troubleshooting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Linux Administration</h3>
+                <p>
+                    Oracle Linux, Red Hat Enterprise Linux,
+                    filesystem management, users and services.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Shell Scripting</h3>
+                <p>
+                    Automation of backups, monitoring,
+                    alert reporting, health checks and maintenance.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">SQL & PL/SQL</h3>
+                <p>
+                    SQL optimization, PL/SQL packages,
+                    procedures, functions and troubleshooting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Database Migration</h3>
+                <p>
+                    Cross-platform migration,
+                    upgrades, export/import,
+                    Data Pump and transportable tablespaces.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Security & Auditing</h3>
+                <p>
+                    User administration, privilege management,
+                    auditing, password policies and database security.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Monitoring</h3>
+                <p>
+                    OEM, alert log monitoring,
+                    health checks, capacity planning
+                    and proactive issue detection.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+     SERVICES
+=========================== -->
+
 <section id="services">
-    <h2>Services</h2>
-    <div class="card">
-        <ul>
-            <li>Oracle DBA Support</li>
-            <li>Database Migration & Upgrades</li>
-            <li>Performance Tuning</li>
-            <li>Backup & Recovery Solutions</li>
-            <li>Oracle RAC & Data Guard Setup</li>
-            <li>Shell Script Automation</li>
-        </ul>
-    </div>
-</section>
 
-<!-- CONTACT -->
+    <div class="container">
+
+        <h2 class="section-title">Services</h2>
+
+        <p style="text-align:center; margin-bottom:40px; color:#cbd5e1;">
+            I provide professional Oracle Database Administration services for enterprise environments,
+            ensuring high availability, performance, and reliability.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle DBA Support</h3>
+                <p>
+                    End-to-end Oracle Database Administration support including installation,
+                    configuration, maintenance and troubleshooting.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle RAC Setup & Support</h3>
+                <p>
+                    Installation, configuration and management of Oracle Real Application Clusters
+                    for high availability and scalability.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Data Guard Implementation</h3>
+                <p>
+                    Setup and management of Oracle Data Guard for disaster recovery and
+                    business continuity solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Performance Tuning</h3>
+                <p>
+                    Database and SQL performance tuning using AWR, ASH, ADDM,
+                    execution plans and system optimization techniques.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Backup & Recovery (RMAN)</h3>
+                <p>
+                    RMAN backup strategy design, recovery testing, database restore
+                    and disaster recovery implementation.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Database Migration & Upgrade</h3>
+                <p>
+                    Oracle database migration, version upgrades, cross-platform migration
+                    and Data Pump solutions.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Shell Scripting Automation</h3>
+                <p>
+                    Automation of DBA tasks such as backups, monitoring, health checks
+                    and alert reporting using shell scripts.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">24×7 Remote DBA Services</h3>
+                <p>
+                    Remote monitoring and support for production databases
+                    with proactive issue resolution and maintenance.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+     PROJECTS
+=========================== -->
+
+<section id="projects">
+
+    <div class="container">
+
+        <h2 class="section-title">Projects</h2>
+
+        <p style="text-align:center; margin-bottom:40px; color:#cbd5e1;">
+            Below are some key database administration projects and real-world implementations
+            handled in enterprise environments.
+        </p>
+
+        <div class="grid">
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle RAC Implementation</h3>
+                <p>
+                    Designed and implemented Oracle Real Application Clusters (RAC)
+                    for high availability and load balancing in production environments.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Oracle Data Guard Setup</h3>
+                <p>
+                    Configured physical standby databases using Oracle Data Guard
+                    to ensure disaster recovery and business continuity.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">RMAN Backup Automation</h3>
+                <p>
+                    Developed automated RMAN backup strategies and shell scripts
+                    for scheduled backups, recovery testing and monitoring.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Database Migration (11g to 19c)</h3>
+                <p>
+                    Successfully migrated Oracle databases from 11g to 19c using
+                    Data Pump, minimizing downtime and ensuring data integrity.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Performance Tuning Project</h3>
+                <p>
+                    Performed SQL and database performance tuning using AWR, ASH,
+                    ADDM reports resulting in significant performance improvement.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3 style="color:#f97316;">Shell Script Automation</h3>
+                <p>
+                    Created automation scripts for database health checks,
+                    alert log monitoring and routine DBA maintenance tasks.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+     CERTIFICATIONS
+=========================== -->
+
+<section id="certifications">
+
+    <div class="container">
+
+        <h2 class="section-title">Certifications</h2>
+
+        <p style="text-align:center; margin-bottom:40px; color:#cbd5e1;">
+            Professional certifications validating Oracle database administration expertise and enterprise skills.
+        </p>
+
+        <div class="grid">
+
+            <div class="card" style="text-align:center;">
+
+                <h2 style="color:#f97316;">OCP</h2>
+
+                <h3>Oracle Certified Professional</h3>
+
+                <p>
+                    Oracle Database Administration Certification demonstrating expertise
+                    in Oracle database installation, configuration, and management.
+                </p>
+
+            </div>
+
+            <div class="card" style="text-align:center;">
+
+                <h2 style="color:#38bdf8;">Oracle</h2>
+
+                <h3>Database Administration</h3>
+
+                <p>
+                    Certified in Oracle Database Administration covering 11g/12c/19c
+                    enterprise environments.
+                </p>
+
+            </div>
+
+            <div class="card" style="text-align:center;">
+
+                <h2 style="color:#f97316;">Linux</h2>
+
+                <h3>Linux Administration</h3>
+
+                <p>
+                    Strong hands-on experience and certification-level knowledge in
+                    Linux server administration for Oracle environments.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ===========================
+     CONTACT
+=========================== -->
+
 <section id="contact">
-    <h2>Contact</h2>
-    <div class="card">
-        <p>Email: abidgul85@gmail.com</p>
-        <p>LinkedIn: linkedin.com/in/abid-hussain-9468a366</p>
-        <p>Fiverr: NA</p>
 
-        <a class="btn" href="mailto:your-email@example.com">Send Email</a>
+    <div class="container">
+
+        <h2 class="section-title">Contact Me</h2>
+
+        <p style="text-align:center; margin-bottom:40px; color:#cbd5e1;">
+            Let’s connect for Oracle DBA opportunities, freelance projects, or enterprise consulting work.
+        </p>
+
+        <div class="card" style="text-align:center;">
+
+            <h3 style="color:#f97316; margin-bottom:20px;">
+                Get In Touch
+            </h3>
+
+            <p style="font-size:16px; margin-bottom:10px;">
+                📧 Email:
+                <a href="mailto:abidgul85@gmail.com" style="color:#38bdf8;">
+                    abidgul85@gmail.com
+                </a>
+            </p>
+
+            <p style="font-size:16px; margin-bottom:10px;">
+                🔗 LinkedIn:
+                <a href="https://www.linkedin.com/in/abid-hussain-9468a366/"
+                   target="_blank"
+                   style="color:#38bdf8;">
+                    View Profile
+                </a>
+            </p>
+
+            <p style="font-size:16px; margin-bottom:30px;">
+                🖥️ Available for Oracle DBA Support, Performance Tuning, RAC, Data Guard,
+                Migration, and Automation Projects.
+            </p>
+
+            <!-- Buttons -->
+
+            <a href="mailto:abidgul85@gmail.com" class="btn">
+                📩 Send Email
+            </a>
+
+            &nbsp;&nbsp;
+
+            <a href="https://wa.me/" target="_blank" class="btn">
+                💬 WhatsApp
+            </a>
+
+            &nbsp;&nbsp;
+
+            <a href="#home" class="btn">
+                ⬆ Back to Top
+            </a>
+
+        </div>
+
     </div>
+
 </section>
+<!-- ===========================
+     FOOTER
+=========================== -->
 
 <footer>
-    <p>© 2026 Abid Hussain | Oracle DBA Portfolio</p>
+
+    <div class="container">
+
+        <p style="margin-bottom:10px;">
+
+            © 2026 <strong>Abid Hussain</strong> | Oracle Certified Professional (OCP)
+
+        </p>
+
+        <p style="color:#94a3b8; font-size:14px;">
+
+            Senior Oracle DBA | Oracle RAC | Data Guard | RMAN | Performance Tuning | Linux | Shell Scripting
+
+        </p>
+
+    </div>
+
 </footer>
+
+<!-- ===========================
+     SIMPLE JAVASCRIPT
+=========================== -->
+
+<script>
+
+    // Smooth scroll enhancement (optional extra smooth behavior)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            const target = document.querySelector(this.getAttribute('href'));
+
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+</script>
 
 </body>
 </html>
